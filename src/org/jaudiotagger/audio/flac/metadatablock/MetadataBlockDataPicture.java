@@ -14,6 +14,8 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.util.logging.Logger;
 
+import kotlin.Deprecated;
+
 
 /**
  * Picture Block
@@ -332,9 +334,8 @@ public class MetadataBlockDataPicture implements MetadataBlockData, TagField
      * method to perform useful operations.
      *
      * @param b <code>true</code>, if the field contains binary data.
-     * @deprecated As for now is of no use. Implementations should use another
-     *             way of setting this property.
      */
+    @Deprecated(message = "As for now is of no use. Implementations should use another way of setting this property.")
     public void isBinary(boolean b)
     {
         //Do nothing, always true

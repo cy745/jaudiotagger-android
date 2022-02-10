@@ -42,6 +42,8 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.regex.Matcher;
 
+import kotlin.Deprecated;
+
 /**
  * Represents an ID3v11 tag.
  *
@@ -251,8 +253,9 @@ public class ID3v11Tag extends ID3v1Tag
      * @param file
      * @throws TagNotFoundException
      * @throws IOException
-     * @deprecated use {@link #ID3v11Tag(RandomAccessFile,String)} instead
+     * use {@link #ID3v11Tag(RandomAccessFile,String)} instead
      */
+    @Deprecated(message = "use {@link #ID3v11Tag(RandomAccessFile,String)} instead")
     public ID3v11Tag(RandomAccessFile file) throws TagNotFoundException, IOException
     {
         this(file, "");

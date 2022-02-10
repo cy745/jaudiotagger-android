@@ -36,6 +36,8 @@ import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import kotlin.Deprecated;
+
 /**
  * Represents an ID3v2.2 frame.
  *
@@ -289,9 +291,10 @@ public class ID3v22Frame extends AbstractID3v2Frame
      * Creates a new ID3v23Frame datatype by reading from byteBuffer.
      *
      * @param byteBuffer to read from
-     * @deprecated use {@link #ID3v22Frame(ByteBuffer,String)} instead
+     * use {@link #ID3v22Frame(ByteBuffer,String)} instead
      * @throws org.jaudiotagger.tag.InvalidFrameException
      */
+    @Deprecated(message = "use {@link #ID3v22Frame(ByteBuffer,String)} instead")
     public ID3v22Frame(ByteBuffer byteBuffer) throws InvalidFrameException, InvalidDataTypeException
     {
         this(byteBuffer, "");
