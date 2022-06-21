@@ -35,7 +35,6 @@ import java.nio.channels.WritableByteChannel;
 import java.util.*;
 import java.util.logging.Level;
 
-import kotlin.Deprecated;
 
 /**
  * Represents an ID3v2.3 tag.
@@ -364,7 +363,6 @@ public class ID3v23Tag extends AbstractID3v2Tag
      * @throws TagException
      * use {@link #ID3v23Tag(ByteBuffer,String)} instead
      */
-    @Deprecated(message = "use {@link #ID3v23Tag(ByteBuffer,String)} instead")
     public ID3v23Tag(ByteBuffer buffer) throws TagException
     {
         this(buffer, "");

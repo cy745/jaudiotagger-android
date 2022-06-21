@@ -35,7 +35,6 @@ import java.util.Iterator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import kotlin.Deprecated;
 
 /**
  * Represents an ID3v2.4 frame.
@@ -355,7 +354,6 @@ public class ID3v24Frame extends AbstractID3v2Frame
      *
      * use {@link #ID3v24Frame(ByteBuffer,String)} instead
      */
-    @Deprecated(message = "use {@link #ID3v24Frame(ByteBuffer,String)} instead")
     public ID3v24Frame(ByteBuffer byteBuffer) throws InvalidFrameException, InvalidDataTypeException
     {
         this(byteBuffer, "");

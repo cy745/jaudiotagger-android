@@ -37,7 +37,6 @@ import java.nio.charset.Charset;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import kotlin.Deprecated;
 
 /**
  * Represents an ID3v2.3 frame.
@@ -311,7 +310,6 @@ public class ID3v23Frame extends AbstractID3v2Frame
      * use {@link #ID3v23Frame(ByteBuffer,String)} instead
      * @throws org.jaudiotagger.tag.InvalidFrameException
      */
-    @Deprecated(message = "use {@link #ID3v23Frame(ByteBuffer,String)} instead")
     public ID3v23Frame(ByteBuffer byteBuffer) throws InvalidFrameException, InvalidDataTypeException
     {
         this(byteBuffer, "");

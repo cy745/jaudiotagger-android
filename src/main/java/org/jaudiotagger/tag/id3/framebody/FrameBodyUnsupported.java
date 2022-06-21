@@ -25,13 +25,13 @@
  */
 package org.jaudiotagger.tag.id3.framebody;
 
+import org.jaudiotagger.tag.InvalidFrameException;
 import org.jaudiotagger.tag.InvalidTagException;
 import org.jaudiotagger.tag.datatype.ByteArraySizeTerminated;
 import org.jaudiotagger.tag.datatype.DataTypes;
 
 import java.nio.ByteBuffer;
 
-import kotlin.Deprecated;
 
 /**
  * Represents a framebody for a frame identifier jaudiotagger has not implemented a framebody for.
@@ -51,7 +51,6 @@ public class FrameBodyUnsupported extends AbstractID3v2FrameBody implements ID3v
     /**
      * because no identifier set
      */
-    @Deprecated(message = "because no identifier set")
     public FrameBodyUnsupported()
     {
 
@@ -84,7 +83,6 @@ public class FrameBodyUnsupported extends AbstractID3v2FrameBody implements ID3v
      * @param value
      * because no identifier set
      */
-    @Deprecated(message = "because no identifier set")
     public FrameBodyUnsupported(byte[] value)
     {
         setObjectValue(DataTypes.OBJ_DATA, value);

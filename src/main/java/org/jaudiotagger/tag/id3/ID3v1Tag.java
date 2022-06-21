@@ -38,7 +38,6 @@ import java.nio.charset.Charset;
 import java.util.*;
 import java.util.regex.Matcher;
 
-import kotlin.Deprecated;
 
 /**
  * Represents an ID3v1 tag.
@@ -207,7 +206,6 @@ public class ID3v1Tag extends AbstractID3v1Tag implements Tag
      * @throws IOException
      * use {@link #ID3v1Tag(RandomAccessFile,String)} instead
      */
-    @Deprecated(message = "use {@link #ID3v1Tag(RandomAccessFile,String)} instead")
     public ID3v1Tag(RandomAccessFile file) throws TagNotFoundException, IOException
     {
         this(file, "");

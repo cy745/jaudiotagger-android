@@ -37,7 +37,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.logging.Level;
 
-import kotlin.Deprecated;
 
 /**
  * Represents an ID3v2.2 tag.
@@ -213,7 +212,6 @@ public class ID3v22Tag extends AbstractID3v2Tag
      * @throws TagException
      * use {@link #ID3v22Tag(ByteBuffer,String)} instead
      */
-    @Deprecated(message = "use {@link #ID3v22Tag(ByteBuffer,String)} instead")
     public ID3v22Tag(ByteBuffer buffer) throws TagException
     {
         this(buffer, "");
