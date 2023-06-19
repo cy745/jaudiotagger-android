@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'com.lalilu.jaudiotagger-multiplatform'
+group = 'com.github.cy745'
 version = '1.0'
 
 sourceCompatibility = JavaVersion.VERSION_1_8 // java 8
